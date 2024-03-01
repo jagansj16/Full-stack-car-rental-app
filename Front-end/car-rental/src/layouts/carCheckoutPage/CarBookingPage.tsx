@@ -35,6 +35,7 @@ export const CarBookingPage = () => {
 
       setCar(loadedCar);
       setIsLoading(false);
+      window.scrollTo(0, 0);
     };
     fetchCar().catch((error: any) => {
       setIsLoading(false);
